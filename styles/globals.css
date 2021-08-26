@@ -1,3 +1,9 @@
+
+@font-face {
+  font-family: "Gowun Batang";
+  src: url("../assets/font/GowunBatang-Regular.ttf") format("truetype"),
+}
+
 html,
 body {
   padding: 0;
@@ -13,4 +19,5 @@ a {
 
 * {
   box-sizing: border-box;
+  font-family: 'Gowun Batang', sans-serif;
 }
