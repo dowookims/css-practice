@@ -1,9 +1,18 @@
-import styles from './question.module.css'
+import { ProblemData } from '../../pages/question/[problemId]';
+import styles from './question.module.css';
 
-const Question = () => {
+
+const Question = ({question: questionData}: {question: ProblemData}) => {
+  const {id, type, title, description, question, answer } = questionData;
   return (
     <article className={styles.question}>
-        <p>같이 문제를 풀어용 ㅎㅅㅎ</p>
+        <h2>{title}</h2>
+        <p>
+          <span>{id}</span>
+          <span>{type}</span>
+        </p>
+        <p>{description}</p>
+        <p>{question}</p>
     </article>
   )
 }
