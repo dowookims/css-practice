@@ -2,4 +2,67 @@
     width: 50%;
     background-color: #fafafa;
     color: #333;
+    padding: 20px 20px 0;
+}
+
+.header {
+    padding: 20px 0 0 20px;
+}
+
+.main {
+    margin-top: 20px;
+}
+
+.description {
+    line-height: 1.5;
+}
+
+.codeExample {
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;;
+}
+
+.questionText {
+    margin-top: 20px;
+}
+
+.codeIndex {
+    margin-right: 10px;
+}
+
+.codeIndex::after {
+    margin-left: 5px;
+    content: '|';
+    color: #ccc;
+}
+
+.selector {
+    color: #49afff;
+    margin-right: 10px;
+}
+
+.keys {
+    color: #af88ea;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.keys::after {
+    content: ' :';
+    color: #fff;
+}
+
+.bracket {
+    color: #fff;
+}
+
+.values {
+    color: #a9dff0;
+}
+
+.values::after {
+    color: #fff;
+    content: ';';
 }

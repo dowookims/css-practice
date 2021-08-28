@@ -5,12 +5,21 @@ import fetch from 'isomorphic-unfetch';
 import { SERVER_URL } from "../../constant";
 import { GetServerSideProps, GetServerSidePropsContext } from "next";
 
+type ExampleData = {
+  [key:string]: string;
+};
+
+interface QuestionData {
+  title: string,
+  data: string
+}
 export interface ProblemData {
       id: number
       type: string
       title: string
       description: string
-      question: string
+      example: ExampleData
+      question: QuestionData
       answer: string
 }
 
